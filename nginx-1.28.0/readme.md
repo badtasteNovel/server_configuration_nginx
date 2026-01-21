@@ -2,3 +2,9 @@
 ![config配置](./internal-private-replaceholder.png "config配置")
 # 位置
 ![alt text](image.png)
+
+#  安裝latest pm2
+```bash
+npm install pm2@latest -g
+pm2 update
+```
