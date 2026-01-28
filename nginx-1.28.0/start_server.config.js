@@ -41,7 +41,11 @@ module.exports = {
       script: 'artisan',
       args: 'reverb:start',
       cwd: activeConfig.projectPath,
-      autorestart: true
+      autorestart: true,
+      max_memory_restart: '512M', // 根據伺服器規格調整，1G 或 512M
+      out_file: './storage/logs/pm2-reverb-out.log', // 建議分開存放日誌
+      error_file: './storage/logs/pm2-reverb-err.log',
+      merge_logs: true,
     }
     
   ]
